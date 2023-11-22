@@ -304,7 +304,7 @@ export default function Form() {
           <input
             type="number"
             placeholder="Kilomètres"
-            value=10000
+            value={10000}
             className="w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-1 focus:ring-emerald-600 focus:border-transparent"
             onChange={(e) => setKilometers(Number.parseInt(e.target.value))}
           />
@@ -313,7 +313,7 @@ export default function Form() {
           <label htmlFor="year">Année :</label>
           <input
             type="number"
-            value=2023
+            value={2023}
             placeholder="Année"
             className="w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-1 focus:ring-emerald-600 focus:border-transparent"
             onChange={(e) => setYear(e.target.value)}
